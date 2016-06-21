@@ -1,36 +1,50 @@
-
 #include <iostream>
-
+#include <string.h>
+#include <stdlib.h>
 using namespace std;
 
 struct registro
 {
-      int valor;
-      struct registro*sig;
-};
+       int valor;
+       struct registro *sig;       
+}temp;
 
-typedef registro _nodo;
+typedef registro nodo ;
 
-_nodo *crearLista (_nodo *apuntador)
+void iniciarCola (  nodo *primero , nodo *nuevo , nodo *ultimo)
 {
-return (apuntador = NULL);
+	nuevo = new (nodo);	
+
+	
 }
 
-bool esListaVacia (_nodo *apuntador)
+bool colaVacia (nodo *inicio)
 {
-if(apuntador==NULL)
-return true;
-else 
-return false;
+	if (inicio ==NULL)
+		return true;
+	else
+		return false;
+
 }
 
-_nodo*insertarEnLista
-(int elemento, _nodo *apuntador)
+void encolar ()
 {
-_nodo *registroNuevo, *apuntadorAuxiliar;
 
-registroNuevo = new(crearLista);
-if(registroNuevo !=NULL)
+}
+
+void desencolar ()
 {
-registroNuevo->valor=elemento;
+}
+
+void primeroEnCola ()
+{
+}
+
+void main ()
+{
+	void colaVacia (); 
+	void iniciarCola ();
+	void encolar ();
+	void desencolar ();
+	void primeroEnCola ();
 }
