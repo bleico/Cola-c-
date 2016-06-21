@@ -34,3 +34,4 @@ if(registroNuevo !=NULL)
 {
 registroNuevo->valor=elemento;
 }
+GUSTAVO ES GAY
